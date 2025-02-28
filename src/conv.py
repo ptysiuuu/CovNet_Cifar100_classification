@@ -4,7 +4,7 @@ import torch.nn.functional as F
 
 
 class Conv(nn.Module):
-    def __init__(self):
+    def __init__(self, num_classes=100):
         super().__init__()
 
         self.conv1 = nn.Conv2d(3, 64, kernel_size=3, stride=1, padding=1)
@@ -42,7 +42,7 @@ class Conv(nn.Module):
         self.bn_fc1 = nn.BatchNorm1d(4000)
         self.fc2 = nn.Linear(4000, 800)
         self.bn_fc2 = nn.BatchNorm1d(800)
-        self.fc3 = nn.Linear(800, 100)
+        self.fc3 = nn.Linear(800, num_classes)
 
         self.dropout_conv = nn.Dropout(0.2)
         self.dropout_fc = nn.Dropout(0.5)
