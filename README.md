@@ -20,6 +20,8 @@ This project focuses on image classification using the CIFAR-100 dataset, levera
 4. **Training and Evaluation:** Trained both models, recorded performance metrics, and visualized the results.  
 5. **Analysis:** Compared the custom and pre-trained models based on accuracy, learning curves, and inference speed.
 
-## 📊 **Results**  
+## 📊 **Results** 
+- All results can be found in the CIFAR100_Report file, avaliable as both .pdf and .ipynb.
 - The pre-trained **ResNet-18** backbone achieved higher accuracy and faster convergence compared to the custom CNN.  
 - The custom CNN provided valuable insights into model design and feature extraction but required more epochs to achieve competitive performance.
+- In the results folder you can find .csv and .xlsx tables containing all trained and tested models with their results and short description.
